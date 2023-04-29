@@ -1,0 +1,6 @@
+environments:
+  production:
+  sandbox:
+
+helmfiles:
+  - git::https://github.com/drequena/distribution.git/@helmfile.yaml?ref=main
