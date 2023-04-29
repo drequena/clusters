@@ -3,4 +3,7 @@ environments:
   sandbox:
 
 helmfiles:
-  - git::https://github.com/drequena/distribution.git/@helmfile.yaml?ref=main
+ - path: git::https://github.com/drequena/distribution.git/@helmfile.yaml?ref=main
+   values:
+   - prometheus:
+       enabled: false
